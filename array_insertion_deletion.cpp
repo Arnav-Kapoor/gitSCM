@@ -31,6 +31,23 @@ int main(){
 
     //deletion
     
+    cout<<"Enter the element you want to delete: ";
+    int del;
+    cin>>del;
+    int s;
 
+    for(int i=0;i<n;i++){
+        if(arr[i]==del){
+            s=i;
+            break;
+        }
+    }
+    for(int i=s;i<n;i++){
+        arr[i]=arr[i+1];
+    }
+    n--;
+     for(int i=0;i<n;i++){
+        cout<<arr[i];
+    }
     return 0;
 }
