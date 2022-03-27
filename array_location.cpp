@@ -10,6 +10,18 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
+    cout<<"Enter element to be searched: ";
+    int ele;
+    cin>>ele;
+    //location
     for(int i=0;i<n;i++){
-        cout<<arr[i];
+        if(arr[i]==ele){
+            cout<<"Element found at index: "<<i;
+        }
+        else{
+            cout<<"ELement not found";
+        }
+
     }
+    return 0;
+}
