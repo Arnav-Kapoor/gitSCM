@@ -15,5 +15,6 @@ int main(){
     for(int i=0;i<n;i++){
         sum+=arr[i];
     }
+    cout<<"sum is: "<<sum;
     return 0;
 }
